@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT9</title>
+</head>
+<body>
+    <script>
+        function checkCharacter(array,character) {
+            var count = 0;
+            for (var i = 0; i < array.length; i++){
+                if (array[i] === character){
+                    count++;
+                }
+            }
+            if (count === 0){
+                count = -1;
+            }
+            return count;
+        }
+        var array = prompt('Enter a string');
+        var character = prompt('Enter a character');
+        alert(checkCharacter(array, character));
+    </script>
+</body>
+</html>
